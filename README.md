@@ -26,7 +26,7 @@ A collection of beginner-friendly projects built with **HTML & CSS** to practice
 
 ## **🟡 Mid Level:**
 
-1. **Lunar eclipse Effect**-animated eclipse effect
+1. **Lunar eclipse Effect**- Animated eclipse effect
 
 ---
 
