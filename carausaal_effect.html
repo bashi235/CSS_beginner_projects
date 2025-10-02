@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal Effect</title>
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: #234C6A;
+        }
+        .carausal{
+            width:35vw;
+            height: 40rem;
+         
+            background-image: url("https://img.freepik.com/free-photo/dystopian-landscape-with-futuristic-city-people_23-2149369692.jpg?ga=GA1.1.1520817592.1759329326&semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+
+            animation: carausal_effect 10s ease-in-out 2s infinite;
+            
+        }
+
+        @keyframes carausal_effect{
+
+            0%{
+                background-image:url("https://img.freepik.com/free-photo/serene-samurai-amidst-cherry-blossoms-moonlit-lake_23-2152016879.jpg?t=st=1759330681~exp=1759334281~hmac=162225e5c9b5b853a509ef823c29ef133a3a293aaaabb5d19d11d9518cb84a40&w=1480") ;
+            }
+            25%{
+                background-image: url("https://img.freepik.com/free-photo/serene-sunset-samurai-warrior-contemplating-nature_23-2152016885.jpg?t=st=1759330967~exp=1759334567~hmac=595611b60a8ad0ecb538a866770f0d61035f9bfd0e64323cd8f6bad235a9eba3&w=1480");
+            }
+            50%{
+                background-image:url("https://img.freepik.com/free-photo/dystopian-landscape-with-futuristic-city-people_23-2149369692.jpg?ga=GA1.1.1520817592.1759329326&semt=ais_hybrid&w=740&q=80") ;
+            }
+            75%{
+                background-image: url("https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112839.jpg?t=st=1759330688~exp=1759334288~hmac=8488eaacdb840de86c92f85e1ff823db5c910528dc9daae0f32b9252d7d4bcba&w=1480");
+
+            }
+            100%{
+                background-image: url("https://img.freepik.com/free-photo/anime-style-portrait-young-student-attending-school_23-2151125263.jpg?t=st=1759331999~exp=1759335599~hmac=005f2dedd7c4ad5236f57e4a84210cbb89a0eed15ad7d1c74fb5142f59cc7099&w=1480");
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="carausal">
+
+    </div>
+</body>
+</html>

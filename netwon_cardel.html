@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netwon Cardel</title>
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+
+        body{
+            height: 100vh;
+            background-color: #19183B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left:35%;
+            top:-20%;
+            
+        }
+
+        .parent{
+            width:50rem;
+            height: 2rem;
+
+            background-color: #A1C2BD ;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            gap:3rem;
+        }
+
+        .child{
+            width:0.5rem;
+            height: 20rem;
+            background-color:#A1C2BD ;
+            position: relative;
+            
+        }
+        .child::after{
+            content: "";
+            width:3.5rem;
+            aspect-ratio: 1;
+            position: absolute;
+            bottom:-2.5rem;
+            left:-1.5em;
+            border-radius: 50%;
+            background-color: #A1C2BD;
+            
+        }
+
+        .parent .child:first-child{
+            animation: left-swing 2s linear  infinite;
+            transform-origin: top left;
+
+        }
+        .parent .child:last-child{
+            animation: right-swing 2s linear 1s infinite;
+            transform-origin: top right;
+        }
+
+        @keyframes left-swing{
+            0%{
+                rotate:0deg;
+            }
+
+            25%{
+                rotate: 30deg;
+            }
+            
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+
+        @keyframes right-swing{
+            0%{
+                rotate:0deg;
+            }
+            25%{
+                rotate: -30deg;
+            }
+            50%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 0deg;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

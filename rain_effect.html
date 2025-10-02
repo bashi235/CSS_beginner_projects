@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Effect</title>
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            width:100vw;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://img.freepik.com/free-photo/thunderstorm-illustration-digital-art-style_23-2151812742.jpg?t=st=1759349419~exp=1759353019~hmac=e26d341b331cb2760320f52c20d3ead3d02e6e5a51d344f4647cfa9f2df3dce7&w=1480");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .rain{
+            width:100vw;
+            height: 100vh;
+            background-image: url("https://img.freepik.com/free-photo/rough-metallic-surface-texture_23-2148953930.jpg?t=st=1759349474~exp=1759353074~hmac=d166dc8337a06aa64f571c4e56678540382d4f27ae3260647042317a182c7fa2&w=1480");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+            animation: rain 1s linear infinite;
+        }
+        @keyframes rain{
+            from{
+                background-position: 100% 100%;
+
+            }
+            to{
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rain">
+
+    </div>
+</body>
+</html>
