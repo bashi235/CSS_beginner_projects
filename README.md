@@ -13,20 +13,14 @@ A collection of beginner-friendly projects built with **HTML & CSS** to practice
 
 ## 📂 Projects Included  
 
-## **🟢 Beginner Level:** 
-
 1. **Carausal Effect** – Smooth image slideshow with animations 
-
 2. **Neon Loader** – Glowing loader animation using pure CSS  
 3. **Newton's Cradle** – Physics-inspired swinging animation  
 4. **Rain Effect** – Simulated rain overlay on background images  
 5. **Shake Button** – Button with hover shake effect  
 6. **Text Reveal** – Animated text reveal using keyframes  
 7. **Bungee Spice Text** – Colorful animated text style with some animation
-
-## **🟡 Mid Level:**
-
-1. **Lunar eclipse Effect**- Animated eclipse effect
+8. **Lunar eclipse Effect**- Animated eclipse effect
 
 ---
 
