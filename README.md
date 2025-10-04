@@ -24,6 +24,12 @@ A collection of beginner-friendly projects built with **HTML & CSS** to practice
 
 ---
 
+## 📂 Edtech Project
+
+1. **Digital Education** - A pure HTML and CSS project
+
+---
+
 ## 🚀 How to Run  
 
 1. Clone the repository:  
