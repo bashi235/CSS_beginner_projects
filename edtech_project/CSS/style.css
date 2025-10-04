@@ -319,17 +319,16 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0.5rem 2rem;
+    
 }
 .blog-title{
-    align-self: left;
-    margin-left: -46rem;
+    align-self: start;
+    
 }
 .blog-overview{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
-    
-    
 }
 .blog-left,.blog-right{
     display: flex;
@@ -487,7 +486,6 @@ button{
 
 /* Contact section starts */
 
-
 .contact-section{
     display: flex;
     justify-content: center;
@@ -496,7 +494,6 @@ button{
     
    
 }
-
 .contact-items{
 
     display: flex;
@@ -546,15 +543,14 @@ button{
         position: relative;
         z-index:-1;
     }
-
-
     .footer-items{
         display: grid;
         grid-template-columns:2fr repeat(2,1fr);
         align-items: end;
         justify-items: center;
+        width: 100vw;
         height: 30rem;
-        padding: 10rem 0rem;
+        padding: 10rem 25rem;
         color: white;
         padding-right: 30rem;
 
@@ -567,7 +563,6 @@ button{
             color: rgb(202, 225, 238);
         }
     }
-
     .footer-items .footer-details{
         & h2{
             font-size:3rem;
@@ -582,3 +577,282 @@ button{
 
     }
 /* footer section ends */
+
+
+/* scrollbar design starts */
+::-webkit-scrollbar{
+    width:0.5rem;
+    height: 0rem;
+}
+::-webkit-scrollbar-track{
+    background:#999fe7;
+    border-radius: 20rem;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    -ms-border-radius: 20rem;
+    -o-border-radius: 20rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #0714a3;
+    border-radius: 20rem;
+    -webkit-border-radius: 20rem;
+    -moz-border-radius: 20rem;
+    -ms-border-radius: 20rem;
+    -o-border-radius: 20rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #09122C;
+}
+/* scrollbar design ends */
+
+/* media query section starts */
+
+@media (max-width: 1267px) {
+    .main-section .main-container .main-image img{
+        width:50rem;
+        height:60rem;
+    }
+    .blog-overview{
+        width:80rem;
+        margin: 3rem;
+        column-gap: 7rem;
+    }
+    .blog-content .h3-tag{
+        font-size: 1.8rem;
+    }
+
+    .blog-content .h3-p-tag{
+        width:25rem;
+        font-size: 1.3rem;
+    }
+
+    .footer-items{
+        & .footer-copyright p{
+            font-size: 1rem;
+        }
+        & .footer-links a{ 
+            font-size: 1rem;
+        }
+    }
+    .footer-items .footer-details{
+        & h2{
+            font-size:2rem;  
+        }
+        & p{
+            font-size:0.7rem;  
+        }
+    }
+}
+
+/* Slightly smaller screens */
+@media (max-width: 1160px){
+    .blog-overview{
+        width:75rem;
+        margin: 3rem;
+        column-gap: 7rem;
+    }
+    .blog-content .h3-tag{
+        font-size: 1.6rem;
+    }
+
+    .blog-content .h3-p-tag{
+        width:20rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1140px) {
+    .main-section .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section .main-container .main-content{
+        align-self: start;
+        margin-left:2rem;
+        margin-top: 5rem;
+    }
+    .main-section .main-container .main-content p{
+        font-size: 2rem;
+        width:70rem;
+    }
+    .main-section .main-container .main-content h1{
+        font-size: 7rem;
+        width: 70rem;
+    }
+    .main-section .main-container .main-content h4{
+        width:24rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 1060px){
+    .h3-tag{
+        font-size: 1.8rem;    
+    }
+    .h3-p-tag{
+        font-size: 1.3rem;
+        width:28rem;
+        height: auto;
+    } 
+    .about-container-child{
+        height: 35rem;
+    }
+    .course-collection .course{
+        width:35rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .blog-overview{
+        width:70rem;
+        margin: 2rem;
+        column-gap: 6rem;
+    }
+    .blog-content .h3-tag{
+        font-size: 1.5rem;
+    }
+
+    .blog-content .h3-p-tag{
+        width:18rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile / smallest screens */
+@media (max-width: 960px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly;
+        align-items: center; */
+    } 
+    .blog-overview{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+    .blog-center{
+        
+        grid-row-start: 1;
+        grid-row-end:2;
+    }
+    
+    .blog-left{
+        grid-row-start:2;
+        grid-row-end: 3;
+        & .blog-content{
+            margin-top: 5rem;
+        }
+    }
+    .blog-right{
+        grid-row-start:3;
+        grid-row-end: 4;
+         & .blog-content{
+            margin-top: 5rem;
+        }
+        
+    }
+
+   .blog-center .blog-content .img{
+    
+    }
+    .blog-content .img::before{
+    top:50%;
+    left:53%; 
+    }
+    .blog-content .img::after{
+    top:50%;
+    left:53%;
+    }
+    
+    .blog-overview{
+        width:45rem;
+        margin: 3rem;
+        column-gap: 7rem;
+        
+    }
+    .blog-content .h3-tag{
+        font-size: 2rem;
+    }
+
+    .blog-content .h3-p-tag{
+        width:20rem;
+        font-size: 1.5rem;
+    }
+    .blog-content .h3-p-tag{
+    width:60rem;
+    }
+    .blog-left .blog-content .h3-p-tag{
+    text-align: start;
+    }
+    .blog-right .blog-content .h3-p-tag{
+    text-align: start;
+    }
+    .blog-right .blog-content{
+    
+    display: flex;
+    flex-direction: column;
+    & .h3-tag{
+        text-align: start;
+    }
+    & .blog-content-number{
+        align-self: start;
+    }
+    
+   
+}
+
+
+
+}
+
+@media (max-width:890px){
+    .course-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .footer-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        width: 80rem;
+        height: 35rem;
+        & .footer-copyright p{
+            font-size: 1.2rem;
+        }
+        & .footer-links a{
+            text-decoration: none;
+            font-size: 1rem;
+            color: rgb(202, 225, 238);
+        }
+    }
+    .footer-items .footer-details{
+        align-self: center;
+        & h2{
+            font-size:2rem;
+            font-family:"Roboto", sans-serif;
+            font-weight: 500;
+            color: #999fe7;
+        }
+        & p{
+            font-size:0.7rem;
+            font-family:"Roboto", sans-serif;
+        }
+
+    }
+    .footer-items .footer-links{
+        align-self: center;
+    }
+    .footer-details .footer-copyright{
+        align-self: center;
+    }
+}
+
+/* media query section ends */
